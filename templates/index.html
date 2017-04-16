@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Domov
+{% endblock %}
+{% block content %}
+
+
+<div class="center-align">
+    <h1><font color="teal">Cassa di Giaco</font></h1>
+    <br>
+    <br>
+    Kuhinja Cassa di Giaco se ponaša s častitljivo tradicijo, ki jo združuje s sodobnimi gastronomskimi trendi.
+Ves čas nudi pestro izbiro odličnih jedi, gostom pa je na voljo tudi bogata ponudba osvežilnih napitkov, solat in prigrizkov.
+Privoščite si slastno kosilo po razumni ceni ali na vrtu restavracije uživajte ob kavi in kateri od domačih sladic.
+
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="{% static 'img/23_MetaInBazilika-400x400.jpg' %}"></a>
+    <a class="carousel-item" href="#two!"><img src="{% static 'img/14291727022957_bifteknazaru.jpg' %}"></a>
+    <a class="carousel-item" href="#three!"><img src="{% static 'img/vinske-melodije.jpg' %}"></a>
+    <a class="carousel-item" href="#four!"><img src="{% static 'img/rolovana-mocarela-sa-prsutom.png' %}"></a>
+    <a class="carousel-item" href="#five!"><img src="{% static 'img/belusi-v-ovitku-briske-pancete.jpg' %}"></a>
+  </div>
+
+</div>
+<p align="center">Dvorana v prvem nadstropju sprejme do 80 gostov, kjer prirejajo poslovna srečanja, poročne sprejeme, seminarje in kongrese.
+<br><br>
+
+Poleg arhitekture boste navdušeni nad prijaznim sprejemom in odlično postrežbo osebja Casse di Giaco.
+Goste znamo razvajati in presenetiti. Ponudimo vam značilne jedi tega okolja.<br><br>
+
+        Če si želite jesti zdravo, je restavracija Cassa di Giaco prava izbira.
+        Kuhinjo odlikuje priprava jedi brez umetnih dodatkov in zgoščevalnih sredstev ali moke, zato je lažje prebavljiva, kar vam povrne moči za nadaljevanje vaših pustolovščin.
+        Zelenjava je sveža, meso pa pripravljeno tako, da obdrži okus lastnih sokov.
+        </p><br>
+
+<p align="center"><img src="{% static 'img/cubo-ambient-foto-Dean-Dubokovic-in-Nejc-Pernek.jpg' %}"></p><br>
+
+<p align="center">Dobro hrano vedno spremlja dobro vino, zato smo iz vinskega sveta izbrali široko ponudbo vin.
+V naši vinski kleti je skoraj 150 etiket vin, mnoga od njih pa lahko naročite tudi na kozarec.<br><br>
+Za aperitiv se bodo najbolj prilegle penine in šampanjci. Lahko ostanete pri slovenskih klasikih, ali pa si privoščite katerega od francoskih šampanjcev.
+    Ob lažjih predjedeh in ribah se vam bo prileglo katero izmed belih vin, ki jih imamo. Za težje jedi pa si lahko izberete enega izmed mnogih rdečih prestižnih vin.<br><br><br></p>
+
+
+<script type="text/javascript" language="javascript">
+$(document).ready(function(){
+      $('.carousel').carousel();
+    });
+</script>
+{% endblock %}

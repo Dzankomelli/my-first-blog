@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+        {% block title %}
+        {% endblock %}
+        </title>
+        <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    </head>
+    <body>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Cassa di Giaco</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="{% url 'home' %}">Domov</a></li>
+                <li><a href="{% url 'meni' %}">Meni</a></li>
+                <li><a href="{% url 'nasipodatki' %}">O nas</a></li>
+                <li><a href="{% url 'vinskakarta' %}">Vinska karta</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content container">
+        <div class="row">
+            <div class="col s12 m10 l10 offset-m1 offset-l1">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

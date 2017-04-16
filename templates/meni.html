@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Meni
+{% endblock %}
+{% block content %}
+<br><br>
+<h2 align="center"><font color="teal">JEDILNI LIST</font></h2><br>
+{% for food_in_category in foods_in_categories %}
+<ul class="collection with-header">
+    <li class="collection-header"><h4><font color="teal">{{food_in_category.category}}</h4></font></li>
+    {% for food in food_in_category.foods %}
+    <li class="collection-item avatar">
+        <i class="material-icons circle">restaurant</i>
+        <span class="title"><h5>{{food.name}}</h5></span>
+        <p>{{food.description}} <br>
+         {{food.price}} €
+      </p>
+    </li>
+    {% endfor %}
+</ul>
+{% endfor %}
+{% endblock %}

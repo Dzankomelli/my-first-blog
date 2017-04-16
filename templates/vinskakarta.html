@@ -1,0 +1,39 @@
+
+
+
+
+{% extends 'base.html' %}
+
+{% block title %}
+Vinska karta
+{% endblock %}
+
+{% block content %}
+<br><br>
+<h2 align="center"><font color="teal">JEDILNI LIST</font></h2><br>
+{% for wine_in_category in wines_in_categories %}
+<ul class="collection with-header">
+    <li class="collection-header"><h4><font color="teal">{{wine_in_category.category}}</h4></font></li>
+    {% for wine in wine_in_category.wines %}
+    <li class="collection-item avatar">
+        <i class="material-icons circle">local_bar</i>
+        <span class="title"><h5>{{wine.name}}</h5></span>
+        <p>{{wine.description}} <br>
+         {{wine.price}} €
+      </p>
+    </li>
+    {% endfor %}
+</ul>
+{% endfor %}
+<br><br>
+<p align="center">Na voljo so še mnoga druga vina, ki jih dobivamo iz meseca v mesec.
+    Če vas zanima naša posebna ponudba vin, vprašajte našega natakrja, ki vam jih bo z veseljem predstavil.</p><br><br><br>
+
+
+
+
+
+
+
+</p>
+{% endblock %}
